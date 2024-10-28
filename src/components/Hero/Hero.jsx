@@ -42,8 +42,6 @@ const Hero = () => {
     backgroundRepeat: "no-repeat",
     heigth: "100%",
     width: "100%",
-    position: "absolute",
-    
     
   };
 
@@ -61,6 +59,7 @@ const Hero = () => {
   };
   
   return (
+    
     <div
       className="group relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200"
       style={BannerImg}
@@ -79,9 +78,9 @@ const Hero = () => {
                 data-aos="zoom-out"
                 data-aos-duration="500"
                 data-aos-once="true"
-                className="text-5xl lg:text-7xl font-bold"
+                className="text-5xl lg:text-7xl font-bold mb-3 hover:underline"
               >
-                Welcome to Cayderus Construction
+                Welcome to Cayderus General Construction 
               </h1>
               <p
                 data-aos="fade-up"
@@ -112,12 +111,12 @@ const Hero = () => {
       <dir className="hidden group-hover:block absolute top-[50%] -translate-x-0 -translate-y-[-50%] right-5 text-2xl rounded-full bg-white/30 hover:bg-white/50 cursor-pointer p-2">
       <MdOutlineKeyboardArrowRight onClick={nextSlide} size={60}  />
       </dir>
-      <div className="flex absolute bottom-5 justify-center items-center py-2 ">
+      <div className="flex absolute bottom-5 justify-center items-center py-2 rounded-full bg-gray-100/50 hover:bg-gray-100/70 ">
         {
           ImageList.map((item , index) => (
 
-          <div key={index} onClick={() => goToSlide(index)} className="text-2xl cursor-pointer" >
-            <RxDotFilled />
+          <div key={index} onClick={() => goToSlide(index)} className="text-2xl cursor-pointer " >
+            <RxDotFilled className="hover:text-primary transition-all duration-300" />
           </div>
           )
         )}

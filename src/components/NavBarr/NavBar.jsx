@@ -70,7 +70,7 @@ const NavBar = () => {
             <div>
               <a href="#" className="font-bold text-sm sm:text-3xl flex gap-2">
                 <img src={Logo} alt="" className="w-5 sm:w-10 rounded-full hover:scale-105" />
-                Cayderus_Construction
+                Cayderus GC
               </a>
             </div>
           </div>
